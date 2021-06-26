@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Switch} from "react-router-dom";
+import QuizScreen from "./Screens/QuizScreen";
+import BackgroundImage2 from "./assets/images/background2.jpg";
+import AnalyticsScreen from "./Screens/AnalyticsScreen";
+import HomeScreen from "./Screens/HomeScreen";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <div
+            style={{
+                backgroundImage: `url(${BackgroundImage2})`,
+                maxHeight: window.innerHeight,
+                maxWidth: window.innerWidth,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed",
+                backgroundColor: "rgba(0, 0, 0, 0.1)",
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <Switch>
+                <Route path="/" exact component={HomeScreen}/>
+                <Route path="/quiz" exact component={QuizScreen}/>
+                <Route path="/analytics" exact component={AnalyticsScreen}/>
+            </Switch>
+        </div>
+    );
 }
 
 export default App;

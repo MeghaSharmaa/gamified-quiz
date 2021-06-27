@@ -265,7 +265,7 @@ var lonelinessQuestions = [
     },
     {
         id:"13",
-        question: "How often do you feel that no one really knows you we11?",
+        question: "How often do you feel that no one really knows you well?",
         answers: [
             {
                 type: "1",
@@ -309,7 +309,7 @@ var lonelinessQuestions = [
     },
     {
         id:"15",
-        question: "How often do you fee1 you can find companionship when you want it?",
+        question: "How often do you feel you can find companionship when you want it?",
         answers: [
             {
                 type: "4",

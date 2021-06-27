@@ -40,7 +40,7 @@ const AnalyticsScreen = () => {
     });
     console.log(res); // result
 
-    const percentage = Math.round((res/(storage.length*4))*100); // percentage variable
+    const percentage =Math.round((res/(storage.length*4))*100); // percentage variable
     console.log(percentage);
     
     
